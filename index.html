@@ -56,6 +56,10 @@
 <nav class="navbar" data-navbar>
     <ul class="navbar-list">
 
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Cari produk..." onkeyup="filterProducts()">
+</div>
+
         <li class="navbar-item">
       <a href="#" class="logo">Kitter</a>
         </li>
@@ -78,14 +82,6 @@
 
         <li class="navbar-item">
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
-        </li>
-
-        <!-- Tombol Pencarian -->
-        <li class="navbar-item">
-            <input type="text" id="search-input" placeholder="Cari..." onkeyup="filterProducts()" class="search-input">
-            <button class="action-btn" aria-label="Search" onclick="filterProducts()">
-                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-            </button>
         </li>
 
     </ul>
