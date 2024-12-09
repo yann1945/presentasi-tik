@@ -124,38 +124,16 @@
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
         </li>
 
-        <!-- Pencarian Produk -->
+        <!-- Tombol Pencarian -->
         <li class="navbar-item">
             <input type="text" id="search-input" placeholder="Cari..." onkeyup="filterProducts()" class="search-input">
+            <button class="action-btn" aria-label="Search" onclick="filterProducts()">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
         </li>
 
     </ul>
 </nav>
-
-<!-- Daftar Produk -->
-<div id="produk-section">
-    <h2>Daftar Produk</h2>
-    <ul id="product-list">
-        <li class="product-item">
-            <img src="./assets/images/product-1.jpg" alt="Produk 1">
-            <span>Produk 1</span>
-        </li>
-        <li class="product-item">
-            <img src="./assets/images/product-2.jpg" alt="Produk 2">
-            <span>Produk 2</span>
-        </li>
-        <li class="product-item">
-            <img src="./assets/images/product-3.jpg" alt="Produk 3">
-            <span>Produk 3</span>
-        </li>
-        <li class="product-item">
-            <img src="./assets/images/product-4.jpg" alt="Produk 4">
-            <span>Produk 4</span>
-        </li>
-        <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
-    </ul>
-</div>
-
 <style>
     .search-input {
         padding: 8px;
@@ -165,11 +143,25 @@
         border-radius: 20px; /* Sudut melengkung */
         outline: none;
         transition: border-color 0.3s;
-        margin-left: 10px; /* Jarak dari item navbar lainnya */
+        margin-right: 5px; /* Jarak dari tombol */
     }
 
     .search-input:focus {
         border-color: #ff9800; /* Warna oranye lebih terang saat fokus */
+    }
+
+    .action-btn {
+        background-color: #ff5722; /* Warna oranye */
+        border: none;
+        border-radius: 20px; /* Sudut melengkung */
+        padding: 8px 12px; /* Padding tombol */
+        cursor: pointer;
+        color: white; /* Warna teks tombol */
+        transition: background-color 0.3s;
+    }
+
+    .action-btn:hover {
+        background-color: #ff9800; /* Warna oranye lebih terang saat hover */
     }
 
     .navbar {
@@ -214,26 +206,6 @@
         }
     }
 </script>
-        <a href="#" class="navbar-action-btn">Log In</a>
-      </nav>
-
-      <div class="header-actions">
-
-        <button class="action-btn" aria-label="Search">
-          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <button class="action-btn user" aria-label="User">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-        </button>
-
-        <button class="action-btn" aria-label="cart">
-          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-
-          <span class="btn-badge">0</span>
-        </button>
-
-      </div>
 
     </div>
   </header>
