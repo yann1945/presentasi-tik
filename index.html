@@ -55,109 +55,32 @@
       </button>
       
       <a href="#" class="logo">Kitter</a>
-<nav class="navbar" data-navbar>
-    <ul class="navbar-list">
 
-        <li class="navbar-item">
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
-        </li>
+          </li>
 
-        <li class="navbar-item">
+          <li class="navbar-item">
             <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
-        </li>
+          </li>
 
-        <li class="navbar-item">
+          <li class="navbar-item">
             <a href="#" class="navbar-link" data-nav-link>Collections</a>
-        </li>
+          </li>
 
-        <li class="navbar-item">
+          <li class="navbar-item">
             <a href="#" class="navbar-link" data-nav-link>Blogs</a>
-        </li>
+          </li>
 
-        <li class="navbar-item">
+          <li class="navbar-item">
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
-        </li>
+          </li>
 
-        <!-- Tombol Pencarian -->
-        <li class="navbar-item">
-            <input type="text" id="search-input" placeholder="Cari..." onkeyup="filterProducts()" class="search-input">
-        </li>
-
-    </ul>
-</nav>
-
-<style>
-    .search-input {
-        padding: 8px;
-        width: 150px; /* Lebar lebih kecil */
-        font-size: 14px; /* Ukuran font lebih kecil */
-        border: 2px solid #ff5722; /* Warna oranye */
-        border-radius: 20px; /* Sudut melengkung */
-        outline: none;
-        transition: border-color 0.3s;
-        margin-right: 5px; /* Jarak dari tombol */
-    }
-
-    .search-input:focus {
-        border-color: #ff9800; /* Warna oranye lebih terang saat fokus */
-    }
-
-    .action-btn {
-        background-color: #ff5722; /* Warna oranye */
-        border: none;
-        border-radius: 20px; /* Sudut melengkung */
-        padding: 8px 12px; /* Padding tombol */
-        cursor: pointer;
-        color: white; /* Warna teks tombol */
-        transition: background-color 0.3s;
-    }
-
-    .action-btn:hover {
-        background-color: #ff9800; /* Warna oranye lebih terang saat hover */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff; /* Warna latar belakang navbar */
-        padding: 10px 20px; /* Padding navbar */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
-    }
-
-    .navbar-list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-item {
-        margin-right: 20px; /* Jarak antar item navbar */
-    }
-
-    .navbar-link {
-        text-decoration: none;
-        color: #333; /* Warna teks link */
-        font-weight: bold;
-    }
-</style>
-
-<script>
-    function filterProducts() {
-        const input = document.getElementById('search-input');
-        const filter = input.value.toLowerCase();
-        const productList = document.getElementById('product-list');
-        const products = productList.getElementsByTagName('li');
-
-        for (let i = 0; i < products.length; i++) {
-            const productName = products[i].getElementsByTagName('span')[0];
-            if (productName) {
-                const txtValue = productName.textContent || productName.innerText;
-                products[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
-            }
-        }
-    }
-</script>
+        </ul>
+      </nav>
 
 
     </div>
