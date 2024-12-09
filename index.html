@@ -6,52 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-        #search-container {
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-        }
-        #search-input {
-            padding: 15px;
-            width: 300px;
-            font-size: 16px;
-            border: 2px solid #ff5722; /* Warna oranye */
-            border-radius: 25px; /* Sudut melengkung */
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        #search-input:focus {
-            border-color: #ff9800; /* Warna oranye lebih terang saat fokus */
-        }
-        #produk-section {
-            margin-top: 20px;
-        }
-        .product-item {
-            margin: 10px 0;
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .product-item img {
-            width: 100px;
-            height: 100px;
-            margin-right: 10px;
-            border-radius: 8px; /* Sudut melengkung pada gambar */
-        }
-        h1, h2 {
-            text-align: center;
-            color: #333;
-        }
-    </style>
   <!-- 
     - primary meta tag
   -->
@@ -1123,23 +1077,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-<script>
-    function filterProducts() {
-        const input = document.getElementById('search-input');
-        const filter = input.value.toLowerCase();
-        const productList = document.getElementById('product-list');
-        const products = productList.getElementsByTagName('li');
-
-        for (let i = 0; i < products.length; i++) {
-            const productName = products[i].getElementsByTagName('span')[0];
-            if (productName) {
-                const txtValue = productName.textContent || productName.innerText;
-                products[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
-            }
-        }
-    }
-</script>
 
 </body>
 
