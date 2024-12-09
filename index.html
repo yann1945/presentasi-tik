@@ -4,65 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-<style>
-    .search-input {
-        padding: 8px;
-        width: 150px; /* Lebar lebih kecil */
-        font-size: 14px; /* Ukuran font lebih kecil */
-        border: 2px solid #ff5722; /* Warna oranye */
-        border-radius: 20px; /* Sudut melengkung */
-        outline: none;
-        transition: border-color 0.3s;
-        margin-right: 5px; /* Jarak dari tombol */
-    }
-
-    .search-input:focus {
-        border-color: #ff9800; /* Warna oranye lebih terang saat fokus */
-    }
-
-    .action-btn {
-        background-color: #ff5722; /* Warna oranye */
-        border: none;
-        border-radius: 20px; /* Sudut melengkung */
-        padding: 8px 12px; /* Padding tombol */
-        cursor: pointer;
-        color: white; /* Warna teks tombol */
-        transition: background-color 0.3s;
-    }
-
-    .action-btn:hover {
-        background-color: #ff9800; /* Warna oranye lebih terang saat hover */
-    }
-
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff; /* Warna latar belakang navbar */
-        padding: 10px 20px; /* Padding navbar */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
-    }
-
-    .navbar-list {
-        list-style: none;
-        display: flex;
-        align-items: center;
-    }
-
-    .navbar-item {
-        margin-right: 35px; /* Jarak antar item navbar */
-    }
-
-    .navbar-link {
-        text-decoration: none;
-        color: #333; /* Warna teks link */
-        font-weight: bold;
-    }
-</style>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
 
 
   <!-- 
@@ -116,14 +58,6 @@
     <ul class="navbar-list">
 
         <li class="navbar-item">
-            <input type="text" id="search-input" placeholder="Cari..." onkeyup="filterProducts()" class="search-input">
-        </li>
-
-        <li class="navbar-item">
-      <a href="#" class="logo">Kitter</a>
-        </li>
-
-        <li class="navbar-item">
             <a href="#home" class="navbar-link" data-nav-link>Home</a>
         </li>
 
@@ -143,8 +77,113 @@
             <a href="#" class="navbar-link" data-nav-link>Contact</a>
         </li>
 
+        <!-- Tombol Pencarian -->
+        <li class="navbar-item">
+            <input type="text" id="search-input" placeholder="Cari..." onkeyup="filterProducts()" class="search-input">
+            <button class="action-btn" aria-label="Search" onclick="filterProducts()">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+        </li>
+
     </ul>
 </nav>
+
+<!-- Daftar Produk -->
+<div id="produk-section">
+    <h2>Daftar Produk</h2>
+    <ul id="product-list">
+        <li class="product-item">
+            <img src="./assets/images/product-1.jpg" alt="Produk 1">
+            <span>Produk 1</span>
+        </li>
+        <li class="product-item">
+            <img src="./assets/images/product-2.jpg" alt="Produk 2">
+            <span>Produk 2</span>
+        </li>
+        <li class="product-item">
+            <img src="./assets/images/product-3.jpg" alt="Produk 3">
+            <span>Produk 3</span>
+        </li>
+        <li class="product-item">
+            <img src="./assets/images/product-4.jpg" alt="Produk 4">
+            <span>Produk 4</span>
+        </li>
+        <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+    </ul>
+</div>
+
+<style>
+    .search-input {
+        padding: 8px;
+        width: 150px; /* Lebar lebih kecil */
+        font-size: 14px; /* Ukuran font lebih kecil */
+        border: 2px solid #ff5722; /* Warna oranye */
+        border-radius: 20px; /* Sudut melengkung */
+        outline: none;
+        transition: border-color 0.3s;
+        margin-right: 5px; /* Jarak dari tombol */
+    }
+
+    .search-input:focus {
+        border-color: #ff9800; /* Warna oranye lebih terang saat fokus */
+    }
+
+    .action-btn {
+        background-color: #ff5722; /* Warna oranye */
+        border: none;
+        border-radius: 20px; /* Sudut melengkung */
+        padding: 8px 12px; /* Padding tombol */
+        cursor: pointer;
+        color: white; /* Warna teks tombol */
+        transition: background-color 0.3s;
+    }
+
+    .action-btn:hover {
+        background-color: #ff9800; /* Warna oranye lebih terang saat hover */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff; /* Warna latar belakang navbar */
+        padding: 10px 20px; /* Padding navbar */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
+    }
+
+    .navbar-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-item {
+        margin-right: 20px; /* Jarak antar item navbar */
+    }
+
+    .navbar-link {
+        text-decoration: none;
+        color: #333; /* Warna teks link */
+        font-weight: bold;
+    }
+</style>
+
+<script>
+    function filterProducts() {
+        const input = document.getElementById('search-input');
+        const filter = input.value.toLowerCase();
+        const productList = document.getElementById('product-list');
+        const products = productList.getElementsByTagName('li');
+
+        for (let i = 0; i < products.length; i++) {
+            const productName = products[i].getElementsByTagName('span')[0];
+            if (productName) {
+                const txtValue = productName.textContent || productName.innerText;
+                products[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
+            }
+        }
+    }
+</script>
 
 
     </div>
@@ -1063,23 +1102,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-<script>
-    function filterProducts() {
-        const input = document.getElementById('search-input');
-        const filter = input.value.toLowerCase();
-        const productList = document.getElementById('product-list');
-        const products = productList.getElementsByTagName('li');
-
-        for (let i = 0; i < products.length; i++) {
-            const productName = products[i].getElementsByTagName('span')[0];
-            if (productName) {
-                const txtValue = productName.textContent || productName.innerText;
-                products[i].style.display = txtValue.toLowerCase().indexOf(filter) > -1 ? "" : "none";
-            }
-        }
-    }
-</script>
 
 
 
