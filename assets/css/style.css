@@ -19,6 +19,7 @@
   /**
    * colors
    */
+
   --bright-yellow-crayola: hsl(36, 94%, 57%);
   --portland-orange: hsl(15, 84%, 57%);
   --battleship-gray: hsl(0, 0%, 53%);
@@ -34,9 +35,6 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(220, 2%, 24%);
-
-
- 
 
   /**
    * typography
@@ -138,7 +136,7 @@ html {
 }
 
 body {
-  background-color: var(--portland-orange);
+  background-color: var(--white);
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
