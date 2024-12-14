@@ -552,7 +552,7 @@ body {
 
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
-  color: var(--white);
+  color: var(--black);
 }
 
 
