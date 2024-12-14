@@ -1,84 +1,23 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hosting NodeJS | Unli</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
 
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            padding: 20px;
-        }
 
-        .product-image {
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
+  <!--
+    - primary meta tag
+  -->
+  <title>Hosting NodeJS | Unli</title>
+  <meta name="title" content="Yann Store - Digital & Hosting">
+  <meta name="description" content="Simple Store By YannXd">
 
-        .product-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .product-name {
-            font-size: 28px;
-            font-weight: bold;
-            margin: 0;
-            color: #2c3e50;
-        }
-
-        .product-price {
-            font-size: 24px;
-            color: #e74c3c;
-            margin: 10px 0;
-        }
-
-        .product-description {
-            margin: 20px 0;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .back-button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #3498db;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            align-self: start;
-        }
-
-        .back-button:hover {
-            background-color: #2980b9;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
-            }
-        }
-    </style>
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -94,9 +33,20 @@
     href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
     rel="stylesheet">
 
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="../assets/images/hero-banner.jpg">
+
 </head>
 
-<header class="header" data-header>
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
     <div class="container">
 
       <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
@@ -142,28 +92,242 @@
 
 
 
-<body>
 
-<div class="container">
-    <img src="../assets/images/product-1.jpg" alt="Produk 1" class="product-image">
-    <div class="product-info">
-        <h1 class="product-name">Produk 1</h1>
-        <div class="product-price">Rp 100.000</div>
-        <div class="product-description">
-            <p>Ini adalah deskripsi untuk Produk 1. Produk ini memiliki kualitas yang sangat baik dan cocok untuk kebutuhan Anda. 
-            Dengan desain yang menarik dan fitur yang lengkap, Produk 1 adalah pilihan yang tepat.</p>
-            <p>Fitur Utama:</p>
-            <ul>
-                <li>Desain modern dan elegan</li>
-                <li>Material berkualitas tinggi</li>
-                <li>Garansi 1 tahun</li>
-                <li>Pengiriman cepat dan aman</li>
-            </ul>
+
+  <main>
+    <article>
+
+
+
+      <!-- 
+        - #PRODUCT
+      -->
+
+      <section class="section product" id="shop" aria-label="product">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Produk</span> Serupa
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-1.jpg" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover default">
+                  <img src="../assets/images/product-1_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Commodo leo sed porta" class="img-cover hover">
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="product/detail-produk-1.html" class="card-title">Commodo leo sed porta</a>
+                  </h3>
+
+                  <data class="card-price" value="15">$15.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-2.jpg" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover default">
+                  <img src="../assets/images/product-2_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Purus consequat congue sit" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Purus consequat congue sit</a>
+                  </h3>
+
+                  <data class="card-price" value="45">$45.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-3.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  <img src="../assets/images/product-3_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                  </h3>
+
+                  <data class="card-price" value="45">$45.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-4.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  <img src="../assets/images/product-4_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                  </h3>
+
+                  <data class="card-price" value="49">$49.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-5.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover default">
+                  <img src="../assets/images/product-5_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Morbi vel arcu scelerisque" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Morbi vel arcu scelerisque</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-6.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default">
+                  <img src="../assets/images/product-6_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+                  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nam justo libero porta ege</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-7.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover default">
+                  <img src="../assets/images/product-7_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Nam justo libero porta ege" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nam justo libero porta ege</a>
+                  </h3>
+
+                  <data class="card-price" value="85">$85.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="product-card">
+
+                <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                  <img src="../assets/images/product-8.jpg" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover default">
+                  <img src="../assets/images/product-8_0.jpg" width="360" height="360" loading="lazy"
+                    alt="Etiam commodo leo sed" class="img-cover hover">
+
+                  <button class="card-action-btn" aria-label="add to card" title="Add To Card">
+                    <ion-icon name="bag-add-outline" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+
+                <div class="card-content"
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Etiam commodo leo sed</a>
+                  </h3>
+
+                  <data class="card-price" value="55">$55.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-        <a href="../index.html" class="back-button">Kembali ke Daftar Produk</a>
-    </div>
-</div>
-
+      </section>
 
   <!-- 
     - #FOOTER
@@ -278,6 +442,20 @@
 
 
 
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
   <!-- 
     - custom js link
   -->
@@ -290,5 +468,8 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 
+
+
 </body>
+
 </html>
