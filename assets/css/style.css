@@ -19,6 +19,11 @@
   /**
    * colors
    */
+
+  --light-gray: hsl(0, 0%, 80%);
+  --blue: hsl(220, 100%, 50%);
+  --purple: hsl(270, 100%, 50%);
+
   --lavender: hsl(270, 60%, 50%);
   --birugelap: hsl(202.44, 100%, 37.25%);
   --unguviolet: hsl(300, 50%, 25%);
@@ -37,6 +42,9 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(220, 2%, 24%);
+
+
+  --gradient-track: linear-gradient(to right, var(--blue, hsl(220, 100%, 40%)), var(--purple, hsl(270, 100%, 40%)))
 
   /**
    * typography
@@ -247,7 +255,7 @@ body {
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   border-radius: var(--radius-10);
-  background-color: var(--portland-orange);
+  background-color: var(--gradient-track);
   border: 2px solid var(--white);
 }
 
