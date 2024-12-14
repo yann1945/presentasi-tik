@@ -20,9 +20,9 @@
    * colors
    */
 
-  --light-gray: hsl(0, 0%, 80%);
-  --blue: hsl(220, 100%, 50%);
-  --purple: hsl(270, 100%, 50%);
+--birugok: hsl(210, 100%, 50%);
+--ungu: hsl(259, 60%, 50%);
+
 
   --lavender: hsl(270, 60%, 50%);
   --birugelap: hsl(202.44, 100%, 37.25%);
@@ -44,7 +44,7 @@
   --onyx: hsl(220, 2%, 24%);
 
 
-  --gradient-track: linear-gradient(to right, var(--blue, hsl(220, 100%, 40%)), var(--purple, hsl(270, 100%, 40%)))
+ 
 
   /**
    * typography
@@ -249,13 +249,13 @@ body {
 .has-scrollbar::-webkit-scrollbar { height: 10px; }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  outline: 2px solid var(--portland-orange);
+  outline: 2px solid var(--ungu);
   border-radius: var(--radius-10);
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   border-radius: var(--radius-10);
-  background-color: var(--gradient-track);
+  background-color: var(--birugelap);
   border: 2px solid var(--white);
 }
 
