@@ -19,7 +19,7 @@
   /**
    * colors
    */
-
+  --lavender: hsl(270, 60%, 50%);
   --birugelap: hsl(202.44, 100%, 37.25%);
   --unguviolet: hsl(300, 50%, 25%);
   --bright-yellow-crayola: hsl(36, 94%, 57%);
@@ -420,7 +420,7 @@ body {
   transition: var(--transition-1);
 }
 
-.category-card .card-title:is(:hover, :focus) { color: var(--unguviolet); }
+.category-card .card-title:is(:hover, :focus) { color: var(--lavender); }
 
 
 
@@ -495,7 +495,7 @@ body {
 
 .product-card .card-title { transition: var(--transition-1); }
 
-.product-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
+.product-card .card-title:is(:hover, :focus) { color: var(--lavender); }
 
 .product-card .card-price {
   color: var(--birugelap);
