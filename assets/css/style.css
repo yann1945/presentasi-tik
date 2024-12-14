@@ -21,6 +21,7 @@
    */
 
   --birugelap: hsl(202.44, 100%, 37.25%);
+  --unguviolet: hsl(300, 50%, 25%);
   --bright-yellow-crayola: hsl(36, 94%, 57%);
   --portland-orange: hsl(15, 84%, 57%);
   --battleship-gray: hsl(0, 0%, 53%);
@@ -419,7 +420,7 @@ body {
   transition: var(--transition-1);
 }
 
-.category-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
+.category-card .card-title:is(:hover, :focus) { color: var(--unguviolet); }
 
 
 
