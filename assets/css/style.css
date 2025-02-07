@@ -161,7 +161,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Membiarkan track transparan */
+  background: transparent; /* Track transparan */
 }
 
 ::-webkit-scrollbar-thumb {
