@@ -618,7 +618,7 @@ body {
 
 .footer-text .link {
   display: inline-block;
-  color: var(--portland-orange);
+  color: var(--blue-turquoise);
 }
 
 .contact-item {
@@ -633,7 +633,7 @@ body {
 .contact-item ion-icon {
   flex-shrink: 0;
   font-size: 22px;
-  color: var(--portland-orange);
+  color: var(--blue-turquoise);
 }
 
 .social-list {
@@ -650,7 +650,7 @@ body {
 }
 
 .social-link:is(:hover, :focus) {
-  background-color: var(--portland-orange);
+  background-color: var(--blue-turquoise);
   color: var(--white);
 }
 
@@ -666,7 +666,7 @@ body {
   transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus) { color: var(--portland-orange); }
+.footer-link:is(:hover, :focus) { color: var(--blue-turquoise); }
 
 .footer-bottom { padding-block: 20px; }
 
