@@ -23,6 +23,7 @@
   --bright-yellow-crayola: hsl(36, 94%, 57%);
   --portland-orange: hsl(210, 100%, 30%);
   --blue-turquoise: hsl(180, 100%, 40%);
+  --ice-blue: hsl(200, 100%, 90%);
   --battleship-gray: hsl(0, 0%, 53%);
   --silver-chalice: hsl(0, 0%, 70%);
   --spanish-gray: hsl(0, 0%, 60%);
@@ -445,7 +446,7 @@ body {
   margin-block: 5px 24px;
 }
 
-.offer-card .btn { background-color: var(--portland-orange); }
+.offer-card .btn { background-color: var(--ice-blue); }
 
 .offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
 
@@ -702,7 +703,7 @@ body {
   z-index: 4;
 }
 
-.back-top-btn.active {
+.back-top-.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(-10px);
