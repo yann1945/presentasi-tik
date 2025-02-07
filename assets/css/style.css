@@ -529,8 +529,9 @@ body {
 
 .list-text {
   text-align: center;
-  color: #989898;
+  color: var(--spanish-gray);
 }
+
 
 
 
