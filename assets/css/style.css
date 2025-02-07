@@ -157,29 +157,32 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px; /* Lebar scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(180deg, #d0e1ff, #e0c3fc); /* Gradasi biru lembut ke ungu */
-  border-radius: 10px;
+  background: transparent; /* Membiarkan track transparan */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #80aaff, #b19cd9); /* Biru dengan aura ungu */
-  border-radius: 10px;
-  transition: background 0.3s ease;
+  background: #80aaff; /* Warna utama thumb */
+  border-radius: 50px; /* Membuatnya lonjong */
+  border: 3px solid rgba(177, 156, 217, 0.6); /* Aura ungu di sekeliling thumb */
+  box-shadow: 0 0 10px rgba(177, 156, 217, 0.8); /* Efek glow ungu */
+  transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #6699ff, #9a7fc4); /* Efek hover lebih gelap */
+  background: #6699ff; /* Warna lebih gelap saat hover */
+  box-shadow: 0 0 15px rgba(177, 156, 217, 1); /* Efek glow lebih terang */
 }
 
 /* Scrollbar untuk Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #80aaff #e0c3fc;
+  scrollbar-color: #80aaff transparent;
 }
+
 
 
 
