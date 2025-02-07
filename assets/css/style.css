@@ -527,6 +527,12 @@ body {
 
 .service-card .card-text { color: var(--spanish-gray); }
 
+.list-text {
+  text-align: center;
+  color: #989898;
+}
+
+
 
 
 
