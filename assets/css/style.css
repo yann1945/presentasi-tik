@@ -144,7 +144,6 @@ body {
 
 :focus-visible { outline-offset: 4px; }
 
-/*-----------------------------------*\
 ::-webkit-scrollbar { width: 10px; }
 
 ::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
@@ -152,37 +151,6 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
-
-\*-----------------------------------*/
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 12px; /* Lebar scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background: transparent; /* Track transparan */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #80aaff; /* Warna utama thumb */
-  border-radius: 50px; /* Membuatnya lonjong */
-  border: 3px solid rgba(177, 156, 217, 0.6); /* Aura ungu di sekeliling thumb */
-  box-shadow: 0 0 10px rgba(177, 156, 217, 0.8); /* Efek glow ungu */
-  transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #6699ff; /* Warna lebih gelap saat hover */
-  box-shadow: 0 0 15px rgba(177, 156, 217, 1); /* Efek glow lebih terang */
-}
-
-/* Scrollbar untuk Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #80aaff transparent;
-}
-
 
 
 
