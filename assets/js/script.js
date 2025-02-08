@@ -63,9 +63,6 @@ const activeElemOnScroll = function () {
  * particle mouse
  */
 
-/**
- * Cursor Fire Particle Effect
- */
 document.addEventListener("mousemove", function (e) {
     const particle = document.createElement("div");
     particle.classList.add("particle");
