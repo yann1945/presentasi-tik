@@ -138,11 +138,10 @@ html {
 }
 
 body {
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 1.6rem;
-    line-height: 1.5;
-    overflow: hidden; /* Mencegah scrollbar muncul saat partikel bergerak */
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .particle {
