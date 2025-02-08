@@ -753,16 +753,27 @@ body {
 /*-----------------------------------*\
   #PARTICLE
 \*-----------------------------------*/
-        .particle {
-            position: absolute;
-            width: 10px; /* Ukuran partikel */
-            height: 10px; /* Ukuran partikel */
-            border-radius: 50%; /* Membuat partikel berbentuk bulat */
-            pointer-events: none; /* Agar partikel tidak mengganggu interaksi mouse */
-            opacity: 0.7; /* Transparansi partikel */
-            transition: transform 0.2s ease, opacity 0.5s ease; /* Animasi untuk gerakan dan transparansi */
-        }
+  .particle {
+    position: absolute;
+    width: 10px; /* Ukuran partikel */
+    height: 10px; /* Ukuran partikel */
+    border-radius: 50%; /* Membuat partikel berbentuk bulat */
+    pointer-events: none; /* Agar partikel tidak mengganggu interaksi mouse */
+    opacity: 0.8; /* Transparansi partikel */
+    transition: transform 0.2s ease, opacity 0.5s ease; /* Animasi untuk gerakan dan transparansi */
+    animation: flicker 0.5s infinite alternate; /* Animasi berkedip */
+}
 
+@keyframes flicker {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+}
 
 /*-----------------------------------*\
   #MEDIA QUERIES
