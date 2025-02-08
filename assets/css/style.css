@@ -744,7 +744,7 @@ body {
   z-index: 4;
 }
 
-.back-top-.active {
+.back-top-btn.active {
   opacity: 1;
   visibility: visible;
   transform: translateY(-10px);
