@@ -556,6 +556,7 @@ body {
 .cta .section-title {
   text-align: left;
   margin-block: 10px 20px;
+  font-weight: 700;
 }
 
 .cta .section-text { 
