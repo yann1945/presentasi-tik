@@ -49,9 +49,12 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 const backToTopBtn = document.querySelector("[data-back-to-top-btn]");
 
 const activeElemOnScroll = function () {
+    console.log("Scrolling..."); // Menampilkan pesan saat menggulir
     if (window.scrollY > 100) {
+        console.log("Adding active class to backToTopBtn"); // Pesan saat menambahkan kelas
         backToTopBtn.classList.add("active"); // Tambahkan kelas aktif
     } else {
+        console.log("Removing active class from backToTopBtn"); // Pesan saat menghapus kelas
         backToTopBtn.classList.remove("active"); // Hapus kelas aktif
     }
 }
