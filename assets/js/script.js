@@ -74,11 +74,14 @@ document.addEventListener("mousemove", function (e) {
     particle.style.background = `linear-gradient(135deg, #4a90e2, #8e44ad)`; // Warna ungu-biru
     
     // Mengatur posisi partikel di bawah kursor
-    particle.style.left = `${e.pageX}px`;
-    particle.style.top = `${e.pageY}px`;
+    const particleX = Math.min(e.pageX, window.innerWidth - 10); // Batasi posisi X
+    const particleY = Math.min(e.pageY, window.innerHeight - 10); // Batasi posisi Y
     
-    // Menambahkan partikel ke body
-    document.body.appendChild(particle);
+    particle.style.left = `${particleX}px`;
+    particle.style.top = `${particleY}px`;
+    
+    // Menambahkan partikel ke container
+    document.getElementById("particle-container").appendChild(particle);
     
     // Menghapus partikel setelah beberapa waktu
     setTimeout(() => {
