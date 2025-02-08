@@ -64,6 +64,7 @@ const activeElemOnScroll = function () {
  */
 
 document.addEventListener("mousemove", function (e) {
+    console.log("Mouse moved"); // Tambahkan ini untuk debugging
     const particle = document.createElement("div");
     particle.classList.add("particle");
     
@@ -90,5 +91,4 @@ document.addEventListener("mousemove", function (e) {
         particle.remove(); // Menghapus elemen partikel dari DOM
     }, 500); // Waktu yang sama dengan durasi animasi
 });
-
 addEventOnElem(window, "scroll", activeElemOnScroll);
