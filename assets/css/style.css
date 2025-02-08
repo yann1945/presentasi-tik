@@ -142,7 +142,6 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden;
 }
 
 :focus-visible { outline-offset: 4px; }
