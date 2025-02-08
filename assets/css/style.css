@@ -142,6 +142,7 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
+  position: relative;
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -753,12 +754,21 @@ body {
 /*-----------------------------------*\
   #PARTICLE
 \*-----------------------------------*/
+#particle-container {
+    position: fixed; /* Mengatur posisi tetap untuk container partikel */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Mencegah scrollbar muncul */
+    pointer-events: none; /* Agar tidak mengganggu interaksi mouse */
+}
+
 .particle {
     position: absolute;
     width: 10px; /* Ukuran partikel */
     height: 10px; /* Ukuran partikel */
     border-radius: 50%; /* Membuat partikel berbentuk bulat */
-    pointer-events: none; /* Agar partikel tidak mengganggu interaksi mouse */
     opacity: 0.8; /* Transparansi partikel */
     transition: transform 0.2s ease, opacity 0.5s ease; /* Animasi untuk gerakan dan transparansi */
     animation: flicker 0.5s infinite alternate; /* Animasi berkedip */
@@ -784,10 +794,6 @@ body {
     background: rgba(255, 255, 255, 0.9);
     transition: background 0.3s;
     z-index: 1000; /* Pastikan navbar di atas partikel */
-}
-
-[data-header].active {
-    background: rgba(0, 0, 0, 0.8);
 }
 
 [data-back-top-btn] {
