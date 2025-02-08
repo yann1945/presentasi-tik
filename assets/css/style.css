@@ -729,27 +729,26 @@ body {
 \*-----------------------------------*/
 
 .back-top-btn {
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: var(--dark-blue);
-  color: var(--white);
-  font-size: 25px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: var(--shadow-2);
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-  z-index: 4;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-2);
+    opacity: 0; /* Mulai dengan opacity 0 */
+    visibility: hidden; /* Mulai dengan visibility hidden */
+    transition: var(--transition-1);
+    z-index: 4;
 }
 
 .back-top-btn.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(-10px);
+    opacity: 1; /* Tampilkan tombol saat aktif */
+    visibility: visible; /* Tampilkan tombol saat aktif */
+    transform: translateY(-10px); /* Efek transisi */
 }
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
