@@ -760,7 +760,7 @@ body {
   #PARTICLE
 \*-----------------------------------*/
 #particle-container {
-    position: fixed; /* Mengatur posisi tetap untuk container partikel */
+    position: relative; /* Ubah dari fixed ke relative */
     top: 0;
     left: 0;
     width: 100%;
