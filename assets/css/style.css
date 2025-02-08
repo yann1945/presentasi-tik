@@ -725,29 +725,36 @@ body {
 
 
 /*-----------------------------------*\
-  #GO TO TOP
+  #BACK TO TOP
 \*-----------------------------------*/
 
-.go-to-top-btn {
+.back-to-top-btn {
     position: fixed;
     bottom: 20px; /* Jarak dari bawah */
     left: 50%; /* Posisikan di tengah */
     transform: translateX(-50%); /* Pindahkan ke kiri setengah lebar tombol */
-    background-color: var(--dark-blue); /* Warna latar belakang */
-    color: var(--white); /* Warna teks */
+    background-color: rgba(128, 128, 128, 0.7); /* Warna abu-abu transparan */
+    color: black; /* Warna teks */
     font-size: 16px; /* Ukuran font */
     padding: 10px 15px; /* Padding */
-    border-radius: 5px; /* Sudut melengkung */
+    border-radius: 25px; /* Sudut melengkung */
     box-shadow: var(--shadow-2); /* Bayangan */
     opacity: 0; /* Mulai dengan opacity 0 */
     visibility: hidden; /* Mulai dengan visibility hidden */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transisi */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transisi */
     z-index: 1000; /* Pastikan di atas elemen lain */
+    transform: translateY(20px); /* Mulai dari bawah */
 }
 
-.go-to-top-btn.active {
+.back-to-top-btn.active {
     opacity: 1; /* Tampilkan tombol saat aktif */
     visibility: visible; /* Tampilkan tombol saat aktif */
+    transform: translateY(0); /* Animasi muncul dari bawah */
+}
+
+.back-to-top-btn span {
+    font-weight: bold; /* Teks tebal */
+    margin-right: 5px; /* Jarak antara teks dan ikon */
 }
 
 /*-----------------------------------*\
