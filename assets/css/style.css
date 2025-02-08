@@ -138,10 +138,21 @@ html {
 }
 
 body {
-  background-color: var(--white);
-  color: var(--black);
-  font-size: 1.6rem;
-  line-height: 1.5;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: hidden; /* Mencegah scrollbar muncul saat partikel bergerak */
+}
+
+.particle {
+    position: absolute;
+    width: 10px; /* Ukuran partikel */
+    height: 10px; /* Ukuran partikel */
+    border-radius: 50%; /* Membuat partikel berbentuk bulat */
+    pointer-events: none; /* Agar partikel tidak mengganggu interaksi mouse */
+    opacity: 0.7; /* Transparansi partikel */
+    transition: transform 0.2s ease, opacity 0.5s ease; /* Animasi untuk gerakan dan transparansi */
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -158,21 +169,20 @@ body {
 
 /* Mengatur lebar scrollbar */
 ::-webkit-scrollbar {
-    width: 10px; /* Lebar scrollbar */
+    width: 10px;
 }
 
 /* Mengatur track scrollbar */
 ::-webkit-scrollbar-track {
-    background-color: hsl(0, 0%, 98%); /* Warna latar belakang track */
-    border-radius: 10px; /* Membuat sudut track melengkung */
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
 }
 
 /* Mengatur thumb scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(135deg, #4a90e2, #8e44ad); /* Warna biru dengan aura ungu */
-    border-radius: 10px; /* Membuat sudut thumb melengkung */
-    border: 2px solid hsl(0, 0%, 98%); /* Border untuk memberikan efek persegi */
-}
+    background: linear-gradient(135deg, #4a90e2, #8e44ad);
+    border-radius: 10px;
+    border: 2px solid hsl(0, 0%, 98%);
 
 /* Mengatur thumb saat hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -181,8 +191,8 @@ body {
 
 /* Untuk Firefox */
 .scrollable {
-    scrollbar-width: thin; /* Mengatur lebar scrollbar */
-    scrollbar-color: #4a90e2 hsl(0, 0%, 98%); /* Warna thumb dan track */
+    scrollbar-width: thin;
+    scrollbar-color: #4a90e2 hsl(0, 0%, 98%);
 }
 
 
