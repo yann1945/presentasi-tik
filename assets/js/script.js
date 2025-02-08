@@ -63,26 +63,28 @@ const activeElemOnScroll = function () {
  * particle mouse
  */
 
-document.addEventListener('mousemove', function(e) {
-    // Membuat elemen partikel
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
+/**
+ * Cursor Fire Particle Effect
+ */
+document.addEventListener("mousemove", function (e) {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");
+    
+    // Mengatur warna partikel untuk menyerupai ungu-biru
+    particle.style.background = `linear-gradient(135deg, #4a90e2, #8e44ad)`; // Warna ungu-biru
     
     // Mengatur posisi partikel di bawah kursor
     particle.style.left = `${e.pageX}px`;
     particle.style.top = `${e.pageY}px`;
-    
-    // Mengatur warna partikel untuk menyerupai api
-    particle.style.background = `linear-gradient(135deg, #ff4500, #ffcc00)`; // Warna api
     
     // Menambahkan partikel ke body
     document.body.appendChild(particle);
     
     // Menghapus partikel setelah beberapa waktu
     setTimeout(() => {
-        particle.style.transform = 'scale(0)'; // Mengurangi ukuran partikel
-        particle.style.opacity = '0'; // Mengurangi transparansi
-    }, 10);
+        particle.style.transform = "scale(0)"; // Mengurangi ukuran partikel
+        particle.style.opacity = "0"; // Mengurangi transparansi
+    }, 0);
     
     setTimeout(() => {
         particle.remove(); // Menghapus elemen partikel dari DOM
