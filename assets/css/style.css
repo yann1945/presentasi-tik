@@ -558,7 +558,11 @@ body {
   margin-block: 10px 20px;
 }
 
-.cta .section-text { margin-block-end: 30px; }
+.cta .section-text { 
+  margin-block-end: 30px; 
+  color: hsl(0, 0%, 73%); /* Warna putih keabu-abuan */
+}
+
 
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
