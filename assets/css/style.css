@@ -142,7 +142,8 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
-  overflow: hidden; /* Mencegah scrollbar muncul */
+  /* Hapus atau ubah baris ini */
+  /* overflow: hidden; */ /* Mencegah scrollbar muncul */
   margin: 0; /* Menghapus margin default */
   padding: 0; /* Menghapus padding default */
   height: 100%; /* Memastikan tinggi 100% */
