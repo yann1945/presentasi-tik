@@ -41,6 +41,34 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
+/**
+ * mouse move
+ */
+document.addEventListener('mousemove', function(e) {
+    // Membuat elemen partikel
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    
+    // Mengatur posisi partikel di bawah kursor
+    particle.style.left = `${e.pageX}px`;
+    particle.style.top = `${e.pageY}px`;
+    
+    // Mengatur warna partikel
+    particle.style.background = `linear-gradient(135deg, #4a90e2, #8e44ad)`;
+    
+    // Menambahkan partikel ke body
+    document.body.appendChild(particle);
+    
+    // Menghapus partikel setelah animasi selesai
+    setTimeout(() => {
+        particle.style.transform = 'scale(0)'; // Mengurangi ukuran partikel
+        particle.style.opacity = '0'; // Mengurangi transparansi
+    }, 10);
+    
+    setTimeout(() => {
+        particle.remove(); // Menghapus elemen partikel dari DOM
+    }, 500); // Waktu yang sama dengan durasi animasi
+});
 
 
 /**
