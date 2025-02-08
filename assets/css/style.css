@@ -172,6 +172,7 @@ body {
 
 .h1,
 .h2,
+.h4,
 .h3 { line-height: 1.1; }
 
 .h1 {
@@ -185,7 +186,11 @@ body {
 .h2,
 .h3 { color: var(--eerie-black); }
 
+.h3 { color: var(--white); }
+
 .h2 { font-size: var(--fs-2); }
+
+.h4 { font-size: var(--fs-2); }
 
 .h3 { font-size: var(--fs-3); }
 
