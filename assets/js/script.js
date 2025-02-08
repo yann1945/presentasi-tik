@@ -46,17 +46,25 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
  * active header when window scroll down to 100px
  */
 
-const header = document.querySelector("[data-header]");
-const backTopBtn = document.querySelector("[data-back-top-btn]");
+const goToTopBtn = document.querySelector("[data-go-to-top-btn]");
 
 const activeElemOnScroll = function () {
-  if (window.scrollY > 100) {
-    header.classList.add("active");
-    backTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    backTopBtn.classList.remove("active");
-  }
+    if (window.scrollY > 100) {
+        goToTopBtn.classList.add("active"); // Tambahkan kelas aktif
+    } else {
+        goToTopBtn.classList.remove("active"); // Hapus kelas aktif
+    }
 }
+
+addEventOnElem(window, "scroll", activeElemOnScroll);
+
+// Tambahkan event listener untuk scroll ke atas saat tombol diklik
+goToTopBtn.addEventListener("click", function (e) {
+    e.preventDefault(); // Mencegah perilaku default
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Efek scroll halus
+    });
+});
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
