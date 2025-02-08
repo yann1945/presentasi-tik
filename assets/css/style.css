@@ -753,7 +753,7 @@ body {
 /*-----------------------------------*\
   #PARTICLE
 \*-----------------------------------*/
-  .particle {
+.particle {
     position: absolute;
     width: 10px; /* Ukuran partikel */
     height: 10px; /* Ukuran partikel */
@@ -773,6 +773,32 @@ body {
         transform: scale(1.2);
         opacity: 0.5;
     }
+}
+
+/* Tambahkan gaya untuk navbar dan elemen lainnya sesuai kebutuhan */
+[data-navbar] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: background 0.3s;
+    z-index: 1000; /* Pastikan navbar di atas partikel */
+}
+
+[data-header].active {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+[data-back-top-btn] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Sembunyikan tombol kembali ke atas */
+}
+
+[data-back-top-btn].active {
+    display: block; /* Tampilkan tombol saat aktif */
 }
 
 /*-----------------------------------*\
