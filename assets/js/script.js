@@ -77,8 +77,8 @@ document.addEventListener("mousemove", function (e) {
     particle.style.left = `${e.pageX}px`;
     particle.style.top = `${e.pageY}px`;
     
-    // Menambahkan partikel ke container
-    document.getElementById("particle-container").appendChild(particle);
+    // Menambahkan partikel ke body
+    document.body.appendChild(particle);
     
     // Menghapus partikel setelah beberapa waktu
     setTimeout(() => {
