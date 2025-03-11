@@ -1,4 +1,16 @@
 /*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
@@ -8,6 +20,7 @@
    * colors
    */
 
+  --bright-yellow-crayola: hsl(36, 94%, 57%);
   --dark-blue: hsl(210, 100%, 30%);
   --blue-turquoise: hsl(180, 100%, 40%);
   --navy-blue: hsl(210, 100%, 20%);
@@ -125,7 +138,7 @@ html {
 }
 
 body {
-  background: var(--white)
+  background-color: var(--white);
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
@@ -140,6 +153,7 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
 
 
 
@@ -443,7 +457,7 @@ body {
 
 
 /*-----------------------------------*\
-  #IDK
+  #PRODUCT
 \*-----------------------------------*/
 
 .product .img-cover.hover,
@@ -490,6 +504,9 @@ body {
 }
 
 
+
+
+
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -512,10 +529,7 @@ body {
 
 .service-card .card-text { color: var(--spanish-gray); }
 
-.list-text {
-  text-align: center;
-  color: var(--spanish-gray);
-}
+
 
 
 
@@ -532,17 +546,9 @@ body {
 .cta .section-title {
   text-align: left;
   margin-block: 10px 20px;
-  font-weight: 900;
-  color: var(--white);
-  font-size: 115%;
 }
 
-.cta .section-text { 
-  margin-block-end: 30px; 
-  color: var(--light-gray);
-  font-size: 115%;
-  font-weight: bold;
-}
+.cta .section-text { margin-block-end: 30px; }
 
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
