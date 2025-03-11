@@ -457,7 +457,7 @@ body {
 
 
 /*-----------------------------------*\
-  #PRODUCT
+  #IDK
 \*-----------------------------------*/
 
 .product .img-cover.hover,
@@ -504,9 +504,6 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -529,7 +526,10 @@ body {
 
 .service-card .card-text { color: var(--spanish-gray); }
 
-
+.list-text {
+  text-align: center;
+  color: var(--spanish-gray);
+}
 
 
 
