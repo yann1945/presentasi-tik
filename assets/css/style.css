@@ -21,7 +21,9 @@
    */
 
   --bright-yellow-crayola: hsl(36, 94%, 57%);
-  --portland-orange: hsl(15, 84%, 57%);
+  --dark-blue: hsl(210, 100%, 30%);
+  --blue-turquoise: hsl(180, 100%, 40%);
+  --navy-blue: hsl(210, 100%, 20%);
   --battleship-gray: hsl(0, 0%, 53%);
   --silver-chalice: hsl(0, 0%, 70%);
   --spanish-gray: hsl(0, 0%, 60%);
@@ -206,7 +208,7 @@ body {
 
 .section-title .span {
   display: inline;
-  color: var(--portland-orange);
+  color: var(--dark-blue);
 }
 
 .img-holder {
@@ -239,13 +241,13 @@ body {
 .has-scrollbar::-webkit-scrollbar { height: 10px; }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  outline: 2px solid var(--portland-orange);
+  outline: 2px solid var(--navy-blue);
   border-radius: var(--radius-10);
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   border-radius: var(--radius-10);
-  background-color: var(--portland-orange);
+  background-color: var(--navy-blue);
   border: 2px solid var(--white);
 }
 
@@ -321,7 +323,7 @@ body {
   position: absolute;
   top: -8px;
   right: -10px;
-  background-color: var(--portland-orange);
+  background-color: var(--dark-blue);
   color: var(--white);
   font-size: var(--fs-8);
   min-width: 18px;
@@ -396,7 +398,7 @@ body {
 
 .hero .btn { margin-inline: auto; }
 
-.hero .btn:is(:hover, :focus) { background-color: var(--portland-orange); }
+.hero .btn:is(:hover, :focus) { background-color: var(--dark-blue); }
 
 
 
@@ -418,7 +420,7 @@ body {
   transition: var(--transition-1);
 }
 
-.category-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
+.category-card .card-title:is(:hover, :focus) { color: var(--navy-blue); }
 
 
 
@@ -446,7 +448,7 @@ body {
   margin-block: 5px 24px;
 }
 
-.offer-card .btn { background-color: var(--portland-orange); }
+.offer-card .btn { background-color: var(--navy-blue); }
 
 .offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
 
@@ -493,10 +495,10 @@ body {
 
 .product-card .card-title { transition: var(--transition-1); }
 
-.product-card .card-title:is(:hover, :focus) { color: var(--portland-orange); }
+.product-card .card-title:is(:hover, :focus) { color: var(--dark-blue); }
 
 .product-card .card-price {
-  color: var(--portland-orange);
+  color: var(--dark-blue);
   font-size: var(--fs-4);
   font-weight: var(--fw-700);
 }
@@ -612,7 +614,7 @@ body {
 
 .footer-text .link {
   display: inline-block;
-  color: var(--portland-orange);
+  color: var(--blue-turquoise);
 }
 
 .contact-item {
@@ -627,7 +629,7 @@ body {
 .contact-item ion-icon {
   flex-shrink: 0;
   font-size: 22px;
-  color: var(--portland-orange);
+  color: var(--blue-turquoise);
 }
 
 .social-list {
@@ -644,7 +646,7 @@ body {
 }
 
 .social-link:is(:hover, :focus) {
-  background-color: var(--portland-orange);
+  background-color: var(--blue-turquoise);
   color: var(--white);
 }
 
@@ -660,7 +662,7 @@ body {
   transition: var(--transition-1);
 }
 
-.footer-link:is(:hover, :focus) { color: var(--portland-orange); }
+.footer-link:is(:hover, :focus) { color: var(--blue-turquoise); }
 
 .footer-bottom { padding-block: 20px; }
 
@@ -684,7 +686,7 @@ body {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--portland-orange);
+  background-color: var(--blue-turquoise);
   color: var(--white);
   font-size: 25px;
   padding: 10px;
@@ -801,8 +803,8 @@ body {
   }
 
   .product-card .card-action-btn:is(:hover, :focus) {
-    background-color: var(--portland-orange);
-    border-color: var(--portland-orange);
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
     color: var(--white);
   }
 
@@ -1004,7 +1006,7 @@ body {
     transition: var(--transition-1);
   }
 
-  .header.active .navbar-link:is(:hover, :focus) { color: var(--portland-orange); }
+  .header.active .navbar-link:is(:hover, :focus) { color: var(--dark-blue); }
 
 
 
