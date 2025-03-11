@@ -137,10 +137,7 @@ html {
 }
 
 body {
-  background: radial-gradient(circle at top left, rgba(0, 170, 255, 0.6) 10%, transparent 50%),
-              radial-gradient(circle at bottom right, rgba(127, 0, 255, 0.6) 10%, transparent 50%),
-              white;
-  min-height: 100vh;
+  background: var(--white)
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
