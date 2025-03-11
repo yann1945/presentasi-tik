@@ -146,7 +146,6 @@ body {
 
 :focus-visible { outline-offset: 4px; }
 
-
 ::-webkit-scrollbar { width: 10px; }
 
 ::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
@@ -154,6 +153,10 @@ body {
 ::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
 
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+
+
+
+
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -171,7 +174,6 @@ body {
 
 .h1,
 .h2,
-.h4,
 .h3 { line-height: 1.1; }
 
 .h1 {
@@ -185,11 +187,7 @@ body {
 .h2,
 .h3 { color: var(--eerie-black); }
 
-.h4 { color: var(--white); }
-
 .h2 { font-size: var(--fs-2); }
-
-.h4 { font-size: var(--fs-2); }
 
 .h3 { font-size: var(--fs-3); }
 
@@ -531,13 +529,6 @@ body {
 
 .service-card .card-text { color: var(--spanish-gray); }
 
-.list-text {
-  text-align: center;
-  color: var(--spanish-gray);
-}
-
-
-
 
 
 
@@ -555,14 +546,9 @@ body {
 .cta .section-title {
   text-align: left;
   margin-block: 10px 20px;
-  font-weight: 900;
 }
 
-.cta .section-text { 
-  margin-block-end: 30px; 
-  color: hsl(0, 0%, 73%); /* Warna putih keabu-abuan */
-}
-
+.cta .section-text { margin-block-end: 30px; }
 
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
@@ -696,34 +682,31 @@ body {
   #BACK TO TOP
 \*-----------------------------------*/
 
-.back-to-top-btn {
-    position: fixed;
-    bottom: 20px; /* Jarak dari bawah */
-    left: 50%; /* Posisikan di tengah */
-    transform: translateX(-50%); /* Pindahkan ke kiri setengah lebar tombol */
-    background-color: rgba(128, 128, 128, 0.7); /* Warna abu-abu transparan */
-    color: black; /* Warna teks */
-    font-size: 16px; /* Ukuran font */
-    padding: 10px 15px; /* Padding */
-    border-radius: 25px; /* Sudut melengkung */
-    box-shadow: var(--shadow-2); /* Bayangan */
-    opacity: 0; /* Mulai dengan opacity 0 */
-    visibility: hidden; /* Mulai dengan visibility hidden */
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease; /* Transisi */
-    z-index: 1000; /* Pastikan di atas elemen lain */
-    transform: translateY(20px); /* Mulai dari bawah */
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--blue-turquoise);
+  color: var(--white);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  z-index: 4;
 }
 
-.back-to-top-btn.active {
-    opacity: 1; /* Tampilkan tombol saat aktif */
-    visibility: visible; /* Tampilkan tombol saat aktif */
-    transform: translateY(0); /* Animasi muncul dari bawah */
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
 }
 
-.back-to-top-btn span {
-    font-weight: bold; /* Teks tebal */
-    margin-right: 5px; /* Jarak antara teks dan ikon */
-}
+
+
+
 
 /*-----------------------------------*\
   #MEDIA QUERIES
