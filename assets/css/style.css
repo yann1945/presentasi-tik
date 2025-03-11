@@ -576,12 +576,14 @@ body {
   text-align: left;
   margin-block: 10px 20px;
   font-weight: 900;
-  color: var(--white);
-  font-size: 115%;
 }
 
 
-.cta .section-text { margin-block-end: 30px; }
+.cta .section-text { 
+  margin-block-end: 30px; 
+  color: var(--white);
+  font-size: 115%;
+}
 
 .cta .btn:is(:hover, :focus) {
   background-color: var(--white);
