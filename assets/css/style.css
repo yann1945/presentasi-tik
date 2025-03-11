@@ -137,7 +137,7 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #0D1B2A, #1B1035);
+  background: linear-gradient(135deg, #ffffff 10%, #00aaff 50%, #7F00FF 90%);
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
